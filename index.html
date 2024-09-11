@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>T124</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Altura completa de la ventana */
-            text-align: center;
-            flex-direction: column; /* Alinea los elementos en columna */
-        }
-        footer {
-            margin: 296px;
-            padding: 11px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-        }
-        footer div {
-            display: flex;
-            align-items: center;
-            margin: 0 5px; /* Espacio entre los elementos */
-        }
-        footer img {
-            margin-right: 5px; /* Espacio entre la imagen y el texto */
-            width: 4%; /* Proporción de tamaño de la imagen */
-        }
-    </style>
+  <title>T124</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Altura completa de la ventana */
+    }
+    .container {
+      width: 80%; /* El contenedor ocupará el 80% del ancho disponible */
+      text-align: center;
+    }
+    img {
+      width: 100%; /* La imagen ocupará el 100% del ancho de su contenedor */
+      max-width: 500px; /* Establece un ancho máximo en píxeles para evitar que la imagen se haga demasiado grande */
+    }
+    footer {
+      margin-top: 5%; /* Margen superior del 5% de la altura de la ventana */
+      display: flex;
+      justify-content: space-around; /* Distribuye los elementos de forma equitativa */
+    }
+    footer div {
+      display: flex;
+      align-items: center;
+    }
+    footer img {
+      width: 20px; /* Tamaño fijo para los iconos, puedes ajustarlo según tus necesidades */
+      margin-right: 5px;
+    }
+  </style>
 </head>
 <body>
-    <img src="t124.png" alt="t124" width="50%">
+  <div class="container">
+    <img src="t124.png" alt="t124">
     <footer>
-        <div>
-            <img src="instagram.png" alt="instagram">
-            <b><a href="https://www.instagram.com/t124.arquitectura" style="color: black; text-decoration: none;">Instagram</a></b>
-        </div>
-        <div class="email">
-            <img src="arroba.png" alt="arroba">
-            <b><a href="mailto:info@t124.com.ar" style="color: black; text-decoration: none;">info@t124.com.ar</a></b>
-        </div>
+      <div>
+        <img src="instagram.png" alt="instagram">
+        <b><a href="https://www.instagram.com/t124.arquitectura" style="color: black; text-decoration: none;">Instagram</a></b>
+      </div>
+      <div class="email">
+        <img src="arroba.png" alt="arroba">
+        <b><a href="mailto:info@t124.com.ar" style="color: black; text-decoration: none;">info@t124.com.ar</a></b>
+      </div>
     </footer>
+  </div>
 </body>
 </html>
