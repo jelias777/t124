@@ -9,27 +9,32 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh; /* Altura completa de la ventana */
+      height: 100vh;
     }
     .container {
-      width: 80%; /* El contenedor ocupará el 80% del ancho disponible */
+      width: 80%;
       text-align: center;
     }
     img {
-      width: 100%; /* La imagen ocupará el 100% del ancho de su contenedor */
-      max-width: 500px; /* Establece un ancho máximo en píxeles para evitar que la imagen se haga demasiado grande */
+      width: 100%;
+      max-width: 500px;
     }
     footer {
-      margin-top: 5%; /* Margen superior del 5% de la altura de la ventana */
+      margin-top: 5%;
       display: flex;
-      justify-content: space-around; /* Distribuye los elementos de forma equitativa */
+      justify-content: space-around;
     }
     footer div {
       display: flex;
       align-items: center;
+      margin: 0 20px;
+    }
+    footer div > div {
+      display: flex;
+      align-items: center;
     }
     footer img {
-      width: 20px; /* Tamaño fijo para los iconos, puedes ajustarlo según tus necesidades */
+      width: 20px;
       margin-right: 5px;
     }
   </style>
@@ -39,12 +44,16 @@
     <img src="t124.png" alt="t124">
     <footer>
       <div>
-        <img src="instagram.png" alt="instagram">
-        <b><a href="https://www.instagram.com/t124.arquitectura" style="color: black; text-decoration: none;">Instagram</a></b>
+        <div>
+          <img src="instagram.png" alt="instagram">
+          <b><a href="https://www.instagram.com/t124.arquitectura" style="color: black; text-decoration: none;">Instagram</a></b>
+        </div>
       </div>
-      <div class="email">
-        <img src="arroba.png" alt="arroba">
-        <b><a href="mailto:info@t124.com.ar" style="color: black; text-decoration: none;">info@t124.com.ar</a></b>
+      <div>
+        <div>
+          <img src="arroba.png" alt="arroba">
+          <b><a href="mailto:info@t124.com.ar" style="color: black; text-decoration: none;">info@t124.com.ar</a></b>
+        </div>
       </div>
     </footer>
   </div>
