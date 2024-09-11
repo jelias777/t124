@@ -3,38 +3,44 @@
 <head>
     <title>T124</title>
     <style>
-        footer {
-            margin-left: 17.5%;
-            margin-right: 16.5%;
+        body {
+            margin: 0;
+            padding: 0;
             display: flex;
+            justify-content: center;
             align-items: center;
+            height: 100vh; /* Altura completa de la ventana */
+            text-align: center;
+            flex-direction: column; /* Alinea los elementos en columna */
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
         }
         footer div {
             display: flex;
             align-items: center;
+            margin: 0 10px; /* Espacio entre los elementos */
         }
         footer img {
-            margin-right: 1.5%; /* Ajustado a un porcentaje relativo al contenedor */
-        }
-        /* Separar el email 10cm del Instagram */
-        .email {
-            margin-left: 6cm; /* Mantengo la separación en cm como solicitaste */
+            margin-right: 5px; /* Espacio entre la imagen y el texto */
+            width: 4%; /* Proporción de tamaño de la imagen */
         }
     </style>
 </head>
-<body style="margin-left: 12.5%; margin-right: 12.5%; object-position: center;">
+<body>
     <img src="t124.png" alt="t124" width="70%">
+    <footer>
+        <div>
+            <img src="instagram.png" alt="instagram">
+            <b><a href="https://www.instagram.com/t124.arquitectura" style="color: black; text-decoration: none;">Instagram</a></b>
+        </div>
+        <div class="email">
+            <img src="arroba.png" alt="arroba">
+            <b><a href="mailto:info@t124.com.ar" style="color: black; text-decoration: none;">info@t124.com.ar</a></b>
+        </div>
+    </footer>
 </body>
-<footer>
-    <div>
-        <img src="instagram.png" alt="instagram" style="width: 4%;">
-        <b><a href="https://www.instagram.com/t124.arquitectura" style="color: black; text-decoration: none;">Instagram</a></b>
-    </div>
-    <div class="email">
-        <img src="arroba.png" alt="arroba" style="width: 4%;">
-        <b>
-            <a href="mailto:info@t124.com.ar" style="color: black; text-decoration: none;">info@t124.com.ar</a>
-        </b>
-    </div>
-</footer>
 </html>
